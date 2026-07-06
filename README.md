@@ -19,7 +19,7 @@
 <img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/be28a597-eef8-481b-862d-cc98533a2e27" />
 
 
-### 代理格式（确认在v2rayN里使用正常的节点）`最好用注册号的代理`
+### 代理格式（确认在v2rayN里使用正常的节点,使用注册时使用的代理节点）
 
 `NODE_LINK` 支持以下任意一种代理协议的完整分享链接（不配置则直连）：
 
