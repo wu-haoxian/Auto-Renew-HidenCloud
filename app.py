@@ -356,10 +356,12 @@ def main():
             if renew_result == "NOT_TIME":
                 log("⏳ 未到续期时间，目前无法续期")
                 status = "⏳ 未到续期时间"
+                send_telegram_notification(status, old_due, new_due)
                 sys.exit(0)
             elif renew_result is False:
                 log("❌ 续费失败，脚本退出。")
                 status = "❌ 续期失败"
+                send_telegram_notification(status, old_due, new_due)
                 sys.exit(1)
             else:  # renew_result is True
                 # 获取新到期时间
